@@ -86,5 +86,7 @@ h1 {
 @media only screen and (max-width: 500px)  {
     h1 {font-size: 30px;
     line-height: 40px;}
-    .grid {margin-left: auto; margin-right: auto;}
+    .grid {margin-left:0; margin-right: 0;}
+    .item:hover{transform: none;}
+    .item{transition: none;}
 }
