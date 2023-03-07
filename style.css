@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@font-face {
+    font-family:'GalanoGrotesque-Medium';
+    src: url(fonts/GalanoGrotesque-Medium.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F9F9FA;
+}
+
+section {
+    width: 100%;
+}
+
+.block-1__title_gradient {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 80px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(90deg,#4343FF 0%, #F96D6D 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.block-1__subtitle {
+    width: auto;
+    max-width: 845px;
+    font-family:'GalanoGrotesque-Medium';
+    font-size: 46px;
+    line-height: 55.2px;
+    text-align: center;
+    color: #110C11;
+    height: 110px;
+    margin-top: 10px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block-1__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 35px;
+    margin-left: 105px;
+    margin-right: 104px;
+}
+
+.block-1__grid-item {
+    padding: 22px;
+    background-color: #FFFFFF;
+    transition: transform 1s;
+}
+
+.block-1__grid-item:hover {
+    transform: scale(1.1);
+}
+
+.block-1__grid-item h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: #110C11;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+
+.block-1__grid-item p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    size: 17px;
+    line-height: 26px;
+    color: #5C5C5C;
+}
+
+@media only screen and (max-width: 500px)  {
+    .block-1__subtitle {font-size: 28px;
+    line-height: 40px;}
+    .block-1__grid {margin-left:0; margin-right: 0;  grid-template-columns: 1fr;}
+    .block-1__grid-item:hover{transform: none;}
+    .block-1__grid-item{transition: none;}
+}
