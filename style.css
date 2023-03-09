@@ -100,13 +100,10 @@
 }
 
 .info__content {
-    display: flex;
-    width: 35%;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: block;
     padding-left: 135px;
     padding-top: 175px;
-    padding-bottom: 175px;
+    padding-bottom: 175px; 
 }
 
 .info__content h2 {
@@ -149,35 +146,37 @@
     margin-right: 10px;
 }
 
-.info__grid {
-    display: grid;
-     width: 40%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+.info__sidebar{
+    display: flex;
     gap: 15px;
-    margin-top: 60px;
-    margin-bottom: 60px;
     margin-right: 220px;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-bottom: 60px;
 }
 
-.info_grid-item {
+.info__sidebar_left-part_item, .info__sidebar_right-part {
     background-color: #EDEDED;
     text-align: center;
     padding: 22px 25px;
-
+    flex-basis: 50%;
 }
 
-.large {
-    padding-top: 100px;
-    grid-row-start: span 2;
+.info__sidebar_left-part_item:last-of-type {
+    margin-top: 15px;
+    padding-bottom: 40px;
 }
 
-.info_grid-item img {
+.info__sidebar_right-part {
+    padding: 110px 22px 106px 22px;
+}
+
+.info__sidebar_left-part_item img, .info__sidebar_right-part img {
     width: 30px;
     height: 30px;
 }
 
-.info_grid-item h4 {
+.info__sidebar_left-part_item h4, .info__sidebar_right-part h4 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -185,13 +184,13 @@
     color: #56565A;
 }
 
-.info_grid-item hr {
+.info__sidebar_left-part_item hr, .info__sidebar_right-part hr {
     border: 1px solid #E5E5E5;
     margin: 15px 0px;
     padding: 0px 50px;
 }
 
-.info_grid-item p {
+.info__sidebar_left-part_item p, .info__sidebar_right-part p {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -199,7 +198,11 @@
     color: #56565A;
 }
 
-
 @media only screen and (max-width: 750px) {
-    .info {flex-wrap: wrap;}
+    .info{flex-direction: column;}
+    .info__sidebar{flex-direction: column;}
+    .info__content{padding-left: 60px; padding-right: 60px; padding-bottom: 0px; padding-top: 60px;}
+    .info__sidebar{margin-right: 60px; margin-top: 0px;}
+    .info__sidebar_right-part{padding-top: 22px; padding-bottom: 22px;}
+    .info__sidebar_left-part_item:last-of-type {padding-bottom: 22px;}
 }
