@@ -124,7 +124,7 @@
     margin-bottom: 25px;
 }
 
-.info__content button{
+.info__btn-group button{
     width: 142px;
     height: 44px;
     cursor: pointer;
@@ -138,11 +138,11 @@
     border: none;
 }
 
-.info__content button:hover {
+.info__btn-group button:hover {
     background-color: #1374cf;
 }
 
-.info__content_btn-group_left {
+.info__btn-group:first-of-type {
     margin-right: 10px;
 }
 
@@ -155,28 +155,28 @@
     margin-bottom: 60px;
 }
 
-.info__sidebar_left-part_item, .info__sidebar_right-part {
+.info__sidebar_first_item, .info__sidebar_second {
     background-color: #EDEDED;
     text-align: center;
     padding: 22px 25px;
     flex-basis: 50%;
 }
 
-.info__sidebar_left-part_item:last-of-type {
+.info__sidebar_first_item:last-of-type {
     margin-top: 15px;
     padding-bottom: 40px;
 }
 
-.info__sidebar_right-part {
+.info__sidebar_second {
     padding: 110px 22px 106px 22px;
 }
 
-.info__sidebar_left-part_item img, .info__sidebar_right-part img {
+.info__sidebar_first_item img, .info__sidebar_second img {
     width: 30px;
     height: 30px;
 }
 
-.info__sidebar_left-part_item h4, .info__sidebar_right-part h4 {
+.info__sidebar_first_item h4, .info__sidebar_second h4 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -184,13 +184,13 @@
     color: #56565A;
 }
 
-.info__sidebar_left-part_item hr, .info__sidebar_right-part hr {
+.info__sidebar_first_item hr, .info__sidebar_second hr {
     border: 1px solid #E5E5E5;
     margin: 15px 0px;
     padding: 0px 50px;
 }
 
-.info__sidebar_left-part_item p, .info__sidebar_right-part p {
+.info__sidebar_first_item p, .info__sidebar_second p {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -203,6 +203,6 @@
     .info__sidebar{flex-direction: column;}
     .info__content{padding-left: 60px; padding-right: 60px; padding-bottom: 0px; padding-top: 60px;}
     .info__sidebar{margin-right: 60px; margin-top: 0px;}
-    .info__sidebar_right-part{padding-top: 22px; padding-bottom: 22px;}
-    .info__sidebar_left-part_item:last-of-type {padding-bottom: 22px;}
+    .info__sidebar_second{padding-top: 22px; padding-bottom: 22px;}
+    .info__sidebar_first_item:last-of-type {padding-bottom: 22px;}
 }
