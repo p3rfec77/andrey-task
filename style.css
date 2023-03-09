@@ -97,6 +97,9 @@
     display: flex;
     flex-direction: row;
     gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0px;
 }
 
 @media only screen and (max-width: 750px) {
@@ -105,16 +108,15 @@
     }
 }
 
-
-
 .info__content {
     display: block;
-    padding: 175px 0px 175px 135px;
+    padding-top: 115px;
 }
 
 @media only screen and (max-width: 750px) {
     .info__content {
-        padding: 60px 60px 0px 60px;
+        padding: 0px 30px 30px 30px;
+        text-align: center;
     }
 }
 
@@ -163,7 +165,6 @@
 .info__sidebar{
     display: flex;
     gap: 15px;
-    margin: 60px 220px 60px 60px;
 }
 
 @media only screen and (max-width: 750px) {
