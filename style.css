@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto+Condensed:wght@700&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto+Condensed:wght@700&family=Source+Sans+Pro:wght@400;600;700&family=Montserrat:wght@400;500;600&display=swap');
 @font-face {
     font-family:'GalanoGrotesque-Medium';
     src: url(fonts/GalanoGrotesque-Medium.ttf);
@@ -7,6 +7,14 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
 }
 
 .block-1 {
@@ -227,4 +235,87 @@
     font-size: 14px;
     line-height: 19px;
     color: #56565A;
+}
+
+.page {
+    background-color: #F5F5F5;
+    padding: 75px 0px;
+    font-family: 'Montserrat';
+}
+
+.page__main-wrap {
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+.page__main-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.page__main-text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    color: #333333;
+    margin-bottom: 35px;
+}
+
+.main__pic-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 80px;
+}
+
+.page__promote-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 930px;
+    margin: 0 auto;
+    background-color: #0079C8;
+    padding: 40px 50px 30px 40px;
+}
+
+.promote__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.promote__text {
+    max-width: 483px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.promote__btn {
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    color: #0079C8;
+    border: 0;
+    background-color: transparent;
+}
+
+.promote__btn_wrap {
+    padding: 20px 40px;
+    align-self: flex-end;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.promote__btn_wrap:hover, .promote__btn_wrap:focus {
+    border: 2px solid #000;
 }
